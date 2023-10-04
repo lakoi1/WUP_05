@@ -74,6 +74,12 @@ fisher.test(table1)
 
 the p value is 0.00000001242 therefore we reject the nun hypothesis. the vaccine is highly effective. Odds ratio is 2.8:1 You are almost three times more likely to not get aids. 
 
+```{r}
+druggies$infected = factor(druggies$infected, c('none','aids'))
+fisher.test(druggies$treatment,druggies$infected)
+```
+
+
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
